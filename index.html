@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10172c">
+<meta name="description" content="Arudra Residency in Tiruvannamalai offers comfortable accommodation near Arunachaleswarar Temple. Explore room categories and enquire directly.">
+<title>Arudra Residency | Comfortable Stay in Tiruvannamalai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<style>
+:root{--navy:#10172c;--navy2:#171f36;--cream:#f6f2eb;--cream2:#eee8dd;--gold:#c7a054;--gold2:#e0c27b;--ink:#151b31;--muted:#626779;--line:rgba(21,27,49,.15);--white:#fff;--shadow:0 18px 45px rgba(16,23,44,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button,a{ -webkit-tap-highlight-color:transparent}.container{width:min(1200px,calc(100% - 48px));margin-inline:auto}.eyebrow{display:flex;align-items:center;gap:14px;color:var(--gold);font-size:.72rem;letter-spacing:.27em;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";height:1px;width:42px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500}h1{font-size:clamp(3.3rem,7.2vw,6.7rem);line-height:.92;letter-spacing:-.035em;max-width:850px;margin:24px 0}h2{font-size:clamp(2.6rem,5vw,4.5rem);line-height:.98;letter-spacing:-.025em;margin:17px 0 18px}h3{font-size:2rem;line-height:1.05;margin:0 0 12px}.gold-italic{color:var(--gold2);font-style:italic}.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:12px 21px;border:1px solid var(--gold);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;transition:background .2s,color .2s,transform .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:var(--navy);border-color:var(--gold)}.btn-outline-light{color:#fff;border-color:rgba(224,194,123,.8)}.btn-outline-dark{color:var(--navy)}
+/* navigation — fixed transparent, darkens on scroll */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;color:#fff;border-bottom:1px solid transparent;backdrop-filter:none;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.site-header.scrolled{background:rgba(16,23,44,.97);border-bottom-color:rgba(199,160,84,.32);backdrop-filter:blur(14px)}.nav-inner{width:min(1320px,calc(100% - 44px));min-height:82px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;flex-shrink:0}.brand img{width:55px;height:55px;object-fit:contain}.brand-name{font:500 1.25rem "Cormorant Garamond",Georgia,serif;letter-spacing:.23em;line-height:1.05}.brand-name small{display:block;color:var(--gold2);font:700 .62rem Manrope,Arial,sans-serif;letter-spacing:.35em;text-transform:uppercase;margin-top:7px}.nav-links{display:flex;align-items:center;gap:clamp(14px,2.5vw,34px);font-size:.69rem;letter-spacing:.13em;text-transform:uppercase}.nav-links a:not(.btn){color:#e5e4e4}.nav-links a:not(.btn):hover{color:var(--gold2)}.nav-links .btn{min-height:44px;padding:9px 16px}.menu-toggle{display:none;background:none;border:1px solid rgba(199,160,84,.65);color:var(--gold2);font-size:1.4rem;width:46px;height:44px}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;background:var(--navy);isolation:isolate;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(105deg,rgba(5,8,20,.95) 0%,rgba(5,8,20,.78) 38%,rgba(5,8,20,.30) 65%,rgba(5,8,20,.08) 100%),
+             linear-gradient(0deg,rgba(5,8,20,.60) 0%,transparent 45%)}
+.hero-content{padding-left:clamp(24px,8.5vw,132px);padding-right:clamp(24px,5vw,60px);padding-top:clamp(80px,12vh,140px);padding-bottom:clamp(80px,12vh,140px);max-width:min(860px,90vw)}
+.hero .eyebrow{color:var(--gold2);margin-bottom:18px;opacity:0;animation:heroFadeUp .85s .15s cubic-bezier(.16,1,.3,1) forwards}
+.hero-h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clamp(4.4rem,8.8vw,7rem);line-height:.93;letter-spacing:-.03em;margin:0 0 32px;opacity:0;animation:heroFadeUp 1.05s .38s cubic-bezier(.16,1,.3,1) forwards}
+.hero-h1 .line1{display:block;color:#fff;margin-bottom:12px}
+.hero-h1 .line2{display:block;color:var(--gold2);font-style:italic}
+.hero-sub{font-family:Manrope,Arial,sans-serif;font-size:clamp(1rem,1.35vw,1.2rem);font-weight:400;max-width:460px;color:#c8ccd8;margin:0;line-height:1.78;letter-spacing:.01em;opacity:0;animation:heroFadeUp 1.05s .62s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes heroFadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+/* slide indicators */
+.hero-indicators{position:absolute;right:clamp(16px,3vw,44px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;z-index:5}
+.hero-ind{width:1px;height:28px;background:rgba(255,255,255,.22);cursor:pointer;transition:background .35s,height .35s;border:none;padding:0;position:relative}
+.hero-ind.active{height:48px;background:var(--gold2)}
+.hero-ind:after{content:"";position:absolute;inset:-8px -10px}
+@media(max-width:640px){.hero-content{padding-top:clamp(100px,20vh,160px)}.hero-indicators{right:10px}.hero-ind{height:20px}.hero-ind.active{height:34px}}
+/* about */
+section{padding:105px 0}.about-grid{display:grid;grid-template-columns:1fr .92fr;gap:clamp(45px,8vw,110px);align-items:center}.about-copy p{max-width:640px;color:var(--muted)}.signature{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.35rem;color:#a98239;margin:26px 0 0}.about-photo{position:relative;min-height:520px;display:flex;flex-direction:column;align-items:center}
+.arch-wrap{position:relative;width:100%;max-width:420px}
+.arch-outer{position:absolute;inset:-10px;border:1px solid rgba(199,160,84,.35);border-radius:220px 220px 18px 18px;pointer-events:none;z-index:2}
+.arch-inner{position:absolute;inset:-4px;border:1px solid rgba(199,160,84,.6);border-radius:216px 216px 14px 14px;pointer-events:none;z-index:2}
+.arch-main{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 30%;border-radius:210px 210px 12px 12px;display:block;position:relative;z-index:1}
+.arch-deco{position:absolute;top:-28px;left:50%;transform:translateX(-50%);width:160%;height:160%;pointer-events:none;z-index:0;overflow:visible}
+.arch-overlap{position:absolute;bottom:-40px;left:-55px;width:28%;aspect-ratio:1/2;z-index:4;border:4px solid #fff;box-shadow:0 12px 32px rgba(16,23,44,.22);transform:rotate(-4deg);overflow:hidden;border-radius:3px}
+.arch-overlap img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-caption{position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.65rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);text-align:center}
+@media(max-width:900px){.arch-wrap{max-width:360px}.arch-overlap{width:38%;bottom:-24px;left:-20px}}
+@media(max-width:640px){.about-photo{min-height:auto;margin-top:16px}.arch-wrap{max-width:100%}.arch-overlap{width:36%;bottom:-20px;left:-10px;border-width:3px}}.fact-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:38px}.fact{padding:20px 12px 0 0}.fact strong{display:block;font:500 2.3rem "Cormorant Garamond",Georgia,serif}.fact span{font-size:.68rem;color:var(--muted);letter-spacing:.13em;text-transform:uppercase}
+/* rooms */
+.rooms-section{background:var(--navy);color:#fff;position:relative;overflow:hidden}.rooms-section:before{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(199,160,84,.15);border-radius:50%;right:-190px;top:-150px;pointer-events:none}.rooms-heading{display:flex;justify-content:space-between;gap:40px;align-items:end}.rooms-heading h2{max-width:700px}.rooms-heading p{max-width:330px;color:#b7bdcb;font-size:.9rem;margin-bottom:24px}.room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:46px;align-items:stretch}.room-card{display:flex;flex-direction:column;min-width:0;height:100%;background:#171f36;border:1px solid rgba(199,160,84,.26);border-radius:5px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}.room-card:hover{transform:translateY(-4px);border-color:rgba(224,194,123,.75);box-shadow:0 22px 48px rgba(0,0,0,.18)}.room-image{position:relative;aspect-ratio:3/2;width:100%;overflow:hidden;background:#272e40}.room-image img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s}.room-card:hover .room-image img{transform:scale(1.035)}.room-index{position:absolute;left:17px;top:17px;width:39px;height:39px;display:grid;place-items:center;border:1px solid rgba(224,194,123,.75);border-radius:50%;background:rgba(16,23,44,.84);color:var(--gold2);font:1.05rem "Cormorant Garamond",Georgia,serif}.room-content{display:flex;flex-direction:column;flex:1;padding:26px 28px 28px}.room-content h3{font-size:2.15rem}.room-summary{color:#bdc3d0;font-size:.86rem;margin-bottom:18px;min-height:45px}.room-meta{display:flex;gap:10px 18px;flex-wrap:wrap;padding:13px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);color:#d7d9e0;font-size:.69rem;letter-spacing:.06em;text-transform:uppercase}.room-meta span{display:inline-flex;align-items:center;gap:7px}.room-meta b{color:var(--gold2);font-weight:600}.amenity-label{color:var(--gold2);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;margin:20px 0 10px}.room-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-bottom:24px}.room-feature{display:flex;gap:9px;align-items:center;color:#e5e6ec;font-size:.78rem}.check{color:var(--gold2);font-weight:700}.room-content .btn{margin-top:auto;width:100%}.room-footnote{color:#b7bdcb;font-size:.75rem;margin:24px 0 0}
+/* facilities */
+.amenity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:42px}.facility{padding:28px 28px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:190px;background:rgba(255,255,255,.24)}.facility-icon{width:43px;height:43px;border:1px solid rgba(199,160,84,.8);border-radius:50%;display:grid;place-items:center;color:#9c762f;font-size:1.05rem;margin-bottom:17px}.facility h3{font-size:1.55rem;margin-bottom:8px}.facility p{color:var(--muted);font-size:.83rem;margin:0}.section-intro{max-width:690px}.section-intro p{color:var(--muted)}
+/* gallery */
+.gallery-section{background:var(--cream2);padding-bottom:0}.gallery-section .container{padding-bottom:0}.gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:220px 220px 220px;gap:12px;margin-top:38px}.gallery-item{border:0;padding:0;position:relative;overflow:hidden;background:#d7d1c6;cursor:pointer}.gallery-item:first-child{grid-row:span 2}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.gallery-item:hover img{transform:scale(1.045)}.gallery-item:after{content:"View photo";position:absolute;right:12px;bottom:12px;background:rgba(16,23,44,.85);color:#fff;padding:6px 10px;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase}
+/* location / contact */
+.contact-card:nth-child(-n+2) small{font:500 1.1rem "DM Sans",Arial,sans-serif;letter-spacing:0;text-transform:none}
+.location-section{background:#e9e1d5}.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch}.location-card{background:var(--navy);color:#fff;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center}.location-card p{color:#c3c8d4}.address{font-size:1rem;line-height:1.9;margin:12px 0 25px}.location-photo{min-height:420px;position:relative;background:var(--navy);overflow:hidden}.location-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.location-photo:after{content:"Tiruvannamalai · Tamil Nadu";position:absolute;left:20px;bottom:20px;background:rgba(16,23,44,.9);border:1px solid rgba(199,160,84,.5);padding:10px 14px;color:#fff;font-size:.67rem;letter-spacing:.15em;text-transform:uppercase}.contact-section{background:var(--cream)}.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}.contact-card{padding:25px;border:1px solid var(--line);background:rgba(255,255,255,.55)}.contact-card small{display:block;color:#a98239;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:10px}.contact-card strong{display:block;font:500 1.1rem "DM Sans",Arial,sans-serif;margin-bottom:12px}.contact-card p{font-size:.81rem;color:var(--muted);margin-bottom:0}.contact-card .btn{margin-top:15px;min-height:42px;padding:8px 13px;font-size:.65rem}.footer{background:#0a1020;color:#b7bdcb;padding:32px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}.footer-brand{color:#fff;font:500 1.2rem "Cormorant Garamond",Georgia,serif;letter-spacing:.2em}.footer p{font-size:.72rem;margin:6px 0 0}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.7rem}.footer-links a:hover{color:var(--gold2)}.mobile-book{display:none}
+.lightbox{position:fixed;inset:0;background:rgba(5,8,18,.92);z-index:90;display:none;align-items:center;justify-content:center;padding:24px}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,95vw);max-height:86vh;object-fit:contain}.lightbox button{position:absolute;top:18px;right:22px;background:none;color:#fff;border:1px solid rgba(255,255,255,.6);font-size:1.8rem;width:48px;height:48px;cursor:pointer}
+@media(max-width:900px){.nav-inner{min-height:74px}.nav-links{gap:14px}.nav-links a:not(.btn){display:none}.brand img{width:48px;height:48px}.hero{min-height:680px}.hero-content{padding:100px 0 70px}.about-grid{gap:42px}.rooms-heading{display:block}.rooms-heading p{max-width:600px}.room-content{padding:23px}.room-content h3{font-size:1.9rem}.amenity-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-rows:190px 190px}.location-grid{gap:25px}.contact-cards{grid-template-columns:1fr 1fr}.contact-card:last-child{grid-column:span 2}}
+@media(max-width:640px){.container,.hero-content{width:calc(100% - 36px)}.nav-inner{width:calc(100% - 32px);min-height:70px}.brand{gap:9px}.brand img{width:42px;height:42px}.brand-name{font-size:1.08rem}.brand-name small{font-size:.55rem;letter-spacing:.25em}.menu-toggle{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:70px;background:var(--navy);padding:16px 22px 22px;border-bottom:1px solid rgba(199,160,84,.35);align-items:stretch;flex-direction:column;gap:13px}.nav-links.open{display:flex}.nav-links a:not(.btn){display:block;padding:8px 0}.nav-links .btn{width:100%}.hero{min-height:690px}.hero:after{background:linear-gradient(105deg,rgba(5,8,20,.95) 0%,rgba(5,8,20,.78) 38%,rgba(5,8,20,.15) 100%),linear-gradient(0deg,rgba(5,8,20,.60) 0%,transparent 45%)}section{padding:72px 0}h2{font-size:2.85rem}.about-grid,.location-grid{grid-template-columns:1fr}.about-grid{gap:32px}.fact-strip{grid-template-columns:repeat(3,1fr)}.fact strong{font-size:1.8rem}.fact span{font-size:.55rem;letter-spacing:.07em}.room-grid{grid-template-columns:1fr;gap:18px;margin-top:30px}.room-card{height:auto}.room-image{aspect-ratio:3/2}.room-content{padding:23px 21px 22px}.room-summary{min-height:0}.room-content h3{font-size:2rem}.room-meta{gap:8px 13px;font-size:.64rem}.room-features{gap:10px}.amenity-grid{grid-template-columns:1fr 1fr}.facility{padding:20px 16px;min-height:180px}.facility h3{font-size:1.35rem}.facility p{font-size:.76rem}.facility-icon{width:38px;height:38px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 150px 150px;gap:8px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:span 2}.location-grid{gap:0}.location-card{padding:30px 24px}.location-photo{min-height:310px}.contact-cards{grid-template-columns:1fr}.contact-card:last-child{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}.mobile-book{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:25;box-shadow:0 8px 24px rgba(0,0,0,.22)}body{padding-bottom:65px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Reference-matched motion, marquee, guest stories and enquiry panel */
+.hero-slideshow{position:absolute;inset:0;z-index:-2;overflow:hidden;background:var(--navy)}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center 48%;opacity:0;transform:scale(1.035);transition:opacity 1.2s ease}
+.hero-slide.active{opacity:1;animation:heroDrift 8s ease-out both}
+@keyframes heroDrift{from{transform:scale(1.035)}to{transform:scale(1.10)}}
+.marquee-band{overflow:hidden;background:var(--cream2);border-top:1px solid rgba(199,160,84,.38);border-bottom:1px solid rgba(199,160,84,.38);color:#34394a;padding:19px 0;white-space:nowrap}
+.marquee-track{display:flex;align-items:center;gap:38px;width:max-content;animation:marqueeScroll 34s linear infinite;font:500 1rem "Cormorant Garamond",Georgia,serif;letter-spacing:.24em}
+.marquee-track b{font-size:.72rem;color:var(--gold);font-family:Manrope,sans-serif}
+.marquee-band:hover .marquee-track{animation-play-state:paused}
+@keyframes marqueeScroll{to{transform:translateX(-50%)}}
+.room-grid{grid-auto-rows:1fr}
+.room-card{position:relative;will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}
+.room-card:hover{transform:translateY(-8px) scale(1.008);box-shadow:0 26px 55px rgba(0,0,0,.28)}
+.room-slides{position:relative;width:100%;height:100%}.room-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity .45s}.room-slide.active{opacity:1;position:relative}.room-slide:not(.active){pointer-events:none}.room-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}.rdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.7);cursor:pointer;transition:background .2s}.rdot.active{background:#fff}.rslide-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;background:rgba(16,23,44,.62);border:1px solid rgba(224,194,123,.5);color:var(--gold2);font-size:1.6rem;line-height:1;width:34px;height:34px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s,background .2s}.rslide-btn.prev{left:10px}.rslide-btn.next{right:10px}.room-image:hover .rslide-btn{opacity:1}.rslide-btn:hover{background:rgba(16,23,44,.9)}
+.room-image img{transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .4s}
+.room-card:hover .room-image img{transform:scale(1.065);filter:saturate(1.06)}
+.facility{transition:transform .32s ease,background .32s ease,box-shadow .32s ease}
+.facility:hover{transform:translateY(-6px);background:#fff;box-shadow:0 16px 36px rgba(16,23,44,.10)}
+.facility-icon{transition:transform .32s ease,background .32s ease,color .32s ease}
+.facility:hover .facility-icon{transform:rotate(-7deg) scale(1.08);background:var(--navy);color:var(--gold2)}
+.btn{position:relative;overflow:hidden;transition:background .25s,color .25s,transform .25s,box-shadow .25s}
+.btn:after{content:"";position:absolute;inset:-50% auto -50% -70%;width:35%;transform:skewX(-20deg);background:rgba(255,255,255,.22);transition:left .6s ease}
+.btn:hover:after{left:140%}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,.14)}
+.gallery-item img{transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .4s}
+.gallery-item:hover img{transform:scale(1.07);filter:brightness(1.06)}
+.guest-stories{background:#10172c;color:#fff;text-align:center;position:relative;overflow:hidden}
+.guest-stories:before,.guest-stories:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(199,160,84,.15);border-radius:50%;pointer-events:none}
+.guest-stories:before{left:-170px;top:-130px}.guest-stories:after{right:-160px;bottom:-190px}
+.guest-stories-inner{position:relative;z-index:1;max-width:850px}
+.guest-stories .eyebrow{justify-content:center}
+.guest-stories h2{font-size:clamp(2.7rem,5vw,4.5rem)}
+.guest-stories>p,.guest-stories-inner>p{max-width:640px;margin:0 auto;color:#c5cad5;font-size:1.02rem}
+.review-carousel{position:relative;margin-top:38px;text-align:left}
+.review-viewport{overflow:hidden}
+.review-grid{display:flex;gap:20px;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.review-card{display:flex;flex-direction:column;flex:0 0 calc((100% - 40px)/2);min-width:0;min-height:290px;padding:28px;background:rgba(246,242,235,.055);border:1px solid rgba(199,160,84,.28);border-radius:6px;box-shadow:0 16px 36px rgba(0,0,0,.10)}
+.review-arrow{position:absolute;top:50%;z-index:2;width:42px;height:42px;transform:translateY(-50%);border:1px solid rgba(224,194,123,.65);border-radius:50%;background:rgba(16,23,44,.92);color:var(--gold2);font-size:1.5rem;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.review-arrow:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.review-arrow.prev{left:-58px}.review-arrow.next{right:-58px}
+.review-arrow:disabled{opacity:.35;cursor:default}
+.review-dots{display:flex;justify-content:center;gap:9px;margin-top:22px}
+.review-dot{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:rgba(224,194,123,.35);cursor:pointer}
+.review-dot.active{width:20px;border-radius:4px;background:var(--gold2)}
+.review-rating{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.review-stars{color:var(--gold2);font-size:.82rem;letter-spacing:.18em}
+.review-score{color:#bfc4d1;font-size:.68rem;letter-spacing:.08em}
+.review-card blockquote{flex:1;margin:0 0 18px;color:#ece9e1;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.28rem;line-height:1.32}
+.review-card p{flex:1;margin:0 0 18px;color:#ece9e1;font-size:.86rem;line-height:1.75}
+.review-card .review-author{display:block;margin-bottom:16px;color:#bfc4d1;font-size:.68rem;letter-spacing:.05em}
+.review-card .review-label{color:var(--gold2)}
+.google-reviews-link{margin-top:30px}
+.inquiry-panel{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:34px 0}
+.inquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:clamp(22px,3vw,36px);background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 35px rgba(16,23,44,.06)}
+.form-heading{grid-column:1/-1}.form-heading h3{font-size:2rem;margin:10px 0}.form-heading p{font-size:.84rem;color:var(--muted);margin:0}
+.inquiry-form label{display:flex;flex-direction:column;gap:7px;font-size:.72rem;letter-spacing:.04em;color:var(--ink);font-weight:700}
+.inquiry-form input,.inquiry-form select,.inquiry-form textarea{width:100%;min-height:44px;padding:11px 12px;border:1px solid #d8d8dd;background:#fcfbf9;border-radius:3px;color:var(--ink);font:400 .85rem Manrope,Arial,sans-serif}
+.inquiry-form textarea{resize:vertical}.inquiry-form input:focus,.inquiry-form select:focus,.inquiry-form textarea:focus{outline:2px solid rgba(199,160,84,.35);border-color:var(--gold)}
+.inquiry-form .form-message{grid-column:1/-1}.form-submit{grid-column:1/-1;width:100%;cursor:pointer;font-family:Manrope,Arial,sans-serif}
+.map-panel{min-height:100%;display:flex;flex-direction:column;background:var(--navy);color:#fff;border-radius:8px;overflow:hidden}
+.map-panel iframe{width:100%;flex:1;min-height:350px;border:0;filter:saturate(.82)}
+.map-panel p{padding:16px 19px;margin:0;color:#d4d7df;font-size:.78rem;line-height:1.6}
+.reveal-ready .reveal{opacity:0;transform:translateY(26px) scale(.985);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
+.reveal-ready .reveal.is-visible{opacity:1;transform:translateY(0) scale(1)}
+.reveal-ready .reveal.pop-in{transform:translateY(30px) scale(.96)}
+.reveal-ready .reveal.pop-in.is-visible{transform:translateY(0) scale(1)}
+@media(max-width:900px){.inquiry-panel{grid-template-columns:1fr}.map-panel iframe{min-height:340px}.hero-booking-inner{flex-wrap:wrap}.hb-field{flex:1 1 45%;border-right:none;border-bottom:1px solid rgba(199,160,84,.2);padding:16px 18px}.hb-submit{width:100%;padding:18px}}
+@media(max-width:900px){.review-card{flex-basis:calc((100% - 20px)/2)}.review-arrow.prev{left:-18px}.review-arrow.next{right:-18px}}
+@media(max-width:640px){.marquee-band{padding:15px 0}.marquee-track{font-size:.83rem;gap:25px;letter-spacing:.16em}.inquiry-form{grid-template-columns:1fr}.form-heading,.inquiry-form .form-message,.form-submit{grid-column:auto}.map-panel iframe{min-height:300px}.guest-stories{padding:70px 0}.review-card{flex-basis:100%}.review-arrow.prev{left:-8px}.review-arrow.next{right:-8px}.hero-booking-inner{flex-direction:column}.hb-field{flex:1 1 100%;padding:14px 18px}.hb-submit{padding:16px}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.hero-slide.active{animation:none}.hero .eyebrow,.hero-h1,.hero-sub{animation:none;opacity:1}.reveal-ready .reveal,.reveal-ready .reveal.is-visible{opacity:1;transform:none;transition:none}.room-card,.facility,.btn,.gallery-item img,.site-header{transition:none}}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Arudra Residency home"><img src="assets/logo-emblem.png" alt="Arudra Residency logo"><span class="brand-name">ARUDRA<small>RESIDENCY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-slideshow" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('assets/hero-1.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-2.jpeg')"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-h1"><span class="line1">Closer to</span><span class="line2">Paradise</span></p>
+    <p class="hero-sub">Thoughtful accommodation for pilgrims, families and travellers visiting Tiruvannamalai.</p>
+  </div>
+  <nav class="hero-indicators" aria-label="Slide indicators"></nav>
+</section>
+
+<div class="marquee-band" aria-label="Arudra Residency highlights">
+  <div class="marquee-track">
+    <span>COMFORTABLE STAYS</span><b>◆</b><span>NEAR ARUNACHALESWARA TEMPLE</span><b>◆</b><span>ROOMS FOR FAMILIES</span><b>◆</b><span>WARM HOSPITALITY</span><b>◆</b><span>TIRUVANNAMALAI</span><b>◆</b>
+    <span>COMFORTABLE STAYS</span><b>◆</b><span>NEAR ARUNACHALESWARA TEMPLE</span><b>◆</b><span>ROOMS FOR FAMILIES</span><b>◆</b><span>WARM HOSPITALITY</span><b>◆</b><span>TIRUVANNAMALAI</span><b>◆</b>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="eyebrow">Our Story & Hospitality</div>
+      <h2>A welcoming stay in the heart of Tiruvannamalai</h2>
+      <p>Arudra Residency welcomes travellers and pilgrims to Tiruvannamalai with comfortable accommodation in a convenient location near the renowned Arunachaleswarar Temple.</p>
+      <p>Whether you are visiting for temple darshan, a spiritual journey, a family trip or a peaceful break, our aim is to offer a welcoming place to rest and make your visit comfortable.</p>
+      <div class="signature">— The Arudra Residency Team</div>
+    </div>
+    <div class="about-photo">
+      <div class="arch-wrap">
+        <svg class="arch-deco" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M60 480 Q-30 300 60 120 Q200-40 340 120 Q430 300 340 480" stroke="rgba(199,160,84,.12)" stroke-width="1" fill="none"/>
+          <path d="M80 480 Q0 300 80 130 Q200-20 320 130 Q400 300 320 480" stroke="rgba(199,160,84,.08)" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="arch-outer"></div>
+        <div class="arch-inner"></div>
+        <img class="arch-main" src="assets/reception.jpeg" alt="Reception area at Arudra Residency" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="rooms-section" id="rooms">
+  <div class="container">
+    <div class="rooms-heading"><div><div class="eyebrow">Accommodations</div><h2>Find the room that fits <span class="gold-italic">your stay.</span></h2></div></div>
+    <div class="room-grid">
+      <article class="room-card">
+        <div class="room-image">
+          <div class="room-slides">
+            <img src="assets/standard-swan-2.png" alt="Standard double room interior" class="room-slide active" loading="lazy">
+            <img src="assets/standard-swan-1.png" alt="Standard double room with swan towel" class="room-slide" loading="lazy">
+          </div>
+          <div class="room-dots"><span class="rdot active"></span><span class="rdot"></span></div>
+          <button class="rslide-btn prev" aria-label="Previous photo">&#8249;</button>
+          <button class="rslide-btn next" aria-label="Next photo">&#8250;</button>
+        </div>
+        <div class="room-content"><h3>Standard Double Room</h3><p class="room-summary">A comfortable room option for solo travellers or couples.</p><div class="room-meta"><span><b>♙</b> Max 2 guests</span><span><b>□</b> 148 sq.ft / 14 sq.mt</span><span><b>↗</b> King bed</span></div><a class="btn btn-outline-light" href="https://wa.me/917200823434?text=Hello%20Arudra%20Residency%2C%20please%20share%20availability%20for%20the%20Standard%20Double%20Room." target="_blank" rel="noopener">Enquire about this room</a></div>
+      </article>
+      <article class="room-card">
+        <div class="room-image">
+          <div class="room-slides">
+            <img src="assets/quadruple-sym-1.png" alt="Symmetrical twin-bed hotel room" class="room-slide active" loading="lazy">
+            <img src="assets/quadruple-sym-2.png" alt="Symmetrical modern hotel room interior" class="room-slide" loading="lazy">
+          </div>
+          <div class="room-dots"><span class="rdot active"></span><span class="rdot"></span></div>
+          <button class="rslide-btn prev" aria-label="Previous photo">&#8249;</button>
+          <button class="rslide-btn next" aria-label="Next photo">&#8250;</button>
+        </div>
+        <div class="room-content"><h3>Quadruple Room</h3><p class="room-summary">A practical group stay with two queen beds and essential comforts.</p><div class="room-meta"><span><b>♙</b> Max 4 guests</span><span><b>□</b> 195 sq.ft / 18 sq.mt</span><span><b>↗</b> 2 Queen beds</span></div><a class="btn btn-outline-light" href="https://wa.me/917200823434?text=Hello%20Arudra%20Residency%2C%20please%20share%20availability%20for%20the%20Quadruple%20Room." target="_blank" rel="noopener">Enquire about this room</a></div>
+      </article>
+      <article class="room-card">
+        <div class="room-image">
+          <div class="room-slides">
+            <img src="assets/premium-q-1.png" alt="Modern hotel room with twin beds" class="room-slide active" loading="lazy">
+            <img src="assets/premium-q-2.png" alt="Modern twin-bed hotel room" class="room-slide" loading="lazy">
+            <img src="assets/premium-q-3.png" alt="Modern hotel room with TV wall and vanity mirror" class="room-slide" loading="lazy">
+          </div>
+          <div class="room-dots"><span class="rdot active"></span><span class="rdot"></span><span class="rdot"></span></div>
+          <button class="rslide-btn prev" aria-label="Previous photo">&#8249;</button>
+          <button class="rslide-btn next" aria-label="Next photo">&#8250;</button>
+        </div>
+        <div class="room-content"><h3>Premium Quadruple Room</h3><p class="room-summary">A comfortable option for small groups, with two queen beds.</p><div class="room-meta"><span><b>♙</b> Max 4 guests</span><span><b>□</b> 195 sq.ft / 18 sq.mt</span><span><b>↗</b> 2 Queen beds</span></div><a class="btn btn-outline-light" href="https://wa.me/917200823434?text=Hello%20Arudra%20Residency%2C%20please%20share%20availability%20for%20the%20Premium%20Quadruple%20Room." target="_blank" rel="noopener">Enquire about this room</a></div>
+      </article>
+      <article class="room-card">
+        <div class="room-image">
+          <div class="room-slides">
+            <img src="assets/family-1.png" alt="Spacious red and gold hotel room" class="room-slide active" loading="lazy">
+            <img src="assets/family-2.png" alt="Warm maroon hotel room interior" class="room-slide" loading="lazy">
+            <img src="assets/family-3.png" alt="Modern living room TV wall" class="room-slide" loading="lazy">
+          </div>
+          <div class="room-dots"><span class="rdot active"></span><span class="rdot"></span></div>
+          <button class="rslide-btn prev" aria-label="Previous photo">&#8249;</button>
+          <button class="rslide-btn next" aria-label="Next photo">&#8250;</button>
+        </div>
+        <div class="room-content"><h3>Family Suite with Temple View</h3><p class="room-summary">A room category for families and larger groups, with a temple-view listing.</p><div class="room-meta"><span><b>♙</b> Max 8 guests</span><span><b>□</b> 350 sq.ft / 33 sq.mt</span><span><b>↗</b> Temple view</span></div><a class="btn btn-outline-light" href="https://wa.me/917200823434?text=Hello%20Arudra%20Residency%2C%20please%20share%20availability%20for%20the%20Family%20Suite%20with%20Temple%20View." target="_blank" rel="noopener">Enquire about this room</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="amenities">
+  <div class="container"><div class="section-intro"><h2>Amenities <span class="gold-italic">& Services</span></h2><p>Everything you need for a comfortable stay, close to the sacred Arunachaleswarar Temple.</p></div>
+    <div class="amenity-grid">
+      <article class="facility"><div class="facility-icon">⌂</div><h3>Comfortable Accommodation</h3><p>Air-conditioned rooms with private bathrooms.</p></article>
+      <article class="facility"><div class="facility-icon">↗</div><h3>Parking</h3><p>Private on-site parking is available.</p></article>
+      <article class="facility"><div class="facility-icon">⌁</div><h3>Free Wi-Fi</h3><p>Stay connected during your visit.</p></article>
+      <article class="facility"><div class="facility-icon">◷</div><h3>Room Service & Assistance</h3><p>Guest assistance and room service.</p></article>
+      <article class="facility"><div class="facility-icon">⌖</div><h3>Close to Arunachaleswarar Temple</h3><p>Conveniently located for temple visits.</p></article>
+    </div>
+  </div>
+</section>
+<section class="gallery-section" id="gallery"><div class="container"><div class="section-intro"><div class="eyebrow">Property Gallery</div><h2>A closer look at <span class="gold-italic">Arudra.</span></h2><p>Explore the rooms and interiors using photographs of the property.</p></div>
+  <div class="gallery-grid">
+    <button class="gallery-item" data-full="assets/room-detail-3.jpg" aria-label="View room photo"><img src="assets/room-detail-3.jpg" alt="Guest room interior" loading="lazy"></button>
+    <button class="gallery-item" data-full="assets/room-detail-2.jpg" aria-label="View room photo"><img src="assets/room-detail-2.jpg" alt="Room with beds and wooden headboard" loading="lazy"></button>
+    <button class="gallery-item" data-full="assets/temple-view.jpeg" aria-label="View location photo"><img src="assets/temple-view.jpeg" alt="Temple area near Tiruvannamalai" loading="lazy"></button>
+    <button class="gallery-item" data-full="assets/arudra-hallway.jpg" aria-label="View hallway photo"><img src="assets/arudra-hallway.jpg" alt="Arudra Residency hallway" loading="lazy"></button>
+    <button class="gallery-item" data-full="assets/family-2.png" aria-label="View room photo"><img src="assets/family-2.png" alt="Warm maroon hotel room interior" loading="lazy"></button>
+  </div>
+</div></section>
+
+<section class="guest-stories" id="guest-stories">
+  <div class="container guest-stories-inner">
+    <h2>Guest Stories</h2>
+    <p>Kind words from guests who stayed with us.</p>
+    <div class="review-carousel" id="reviewCarousel" aria-label="Guest reviews carousel">
+      <button class="review-arrow prev" type="button" aria-label="Previous review">‹</button>
+      <div class="review-viewport">
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-rating"><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span><span class="review-score">5/5</span></div>
+            <blockquote>“I had a pleasant stay. Especially it was very near to temple. The room was clean and comfortable, and the staff were friendly and helpful. Overall, it was a good experience.”</blockquote>
+            <span class="review-author">Nabiya V</span>
+          </article>
+          <article class="review-card">
+            <div class="review-rating"><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span><span class="review-score">5/5</span></div>
+            <blockquote>“Had a very pleasant stay at this hotel. It is conveniently located just a 10-minute drive from the Old Bus Station and directly opposite the South Gopuram, with a beautiful view from the terrace.”</blockquote>
+            <span class="review-author">Sunil Suri</span>
+          </article>
+          <article class="review-card">
+            <div class="review-rating"><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span><span class="review-score">5/5</span></div>
+            <blockquote>“I highly recommend Arudra Hotel! We stayed as a family of three for one night and had a wonderful experience. The location is perfect—it is located just near the South Gopuram of the Thiruvannamalai temple.”</blockquote>
+            <span class="review-author">sasirehka G</span>
+          </article>
+        </div>
+      </div>
+      <button class="review-arrow next" type="button" aria-label="Next review">›</button>
+      <div class="review-dots" role="tablist" aria-label="Choose guest review"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact"><div class="container"><div class="section-intro"><div class="eyebrow">Contact & Reservations</div><h2>Plan your stay <span class="gold-italic">with us.</span></h2><p>Contact Arudra Residency directly to check room availability, rates, room views and booking details.</p></div>
+<div class="inquiry-panel">
+  <form id="inquiryForm" class="inquiry-form">
+    <div class="form-heading">
+      <div class="eyebrow">Send an Enquiry</div>
+      <h3>How can we help with your stay?</h3>
+      <p>Share your details and preferred room. We will get back to you as soon as possible.</p>
+    </div>
+    <label>Full name<input type="text" name="guestName" autocomplete="name" placeholder="Your name" required></label>
+    <label>Phone number<input type="tel" name="guestPhone" autocomplete="tel" placeholder="Your contact number" required></label>
+    <label>Preferred room
+      <select name="roomType" required>
+        <option value="">Choose a room</option>
+        <option>Standard Double Room</option>
+        <option>Quadruple Room</option>
+        <option>Premium Quadruple Room</option>
+        <option>Family Suite with Temple View</option>
+      </select>
+    </label>
+    <label>Check-in date<input type="date" name="checkIn"></label>
+    <label>Check-out date<input type="date" name="checkOut"></label>
+    <label class="form-message">Message<textarea name="message" rows="3" placeholder="Guests, questions or special requests"></textarea></label>
+    <button class="btn btn-gold form-submit" type="submit">Send Enquiry</button>
+    <p id="formStatus" style="grid-column:1/-1;margin:0;font-size:.82rem;text-align:center;min-height:1.4em"></p>
+  </form>
+  <div class="map-panel">
+    <iframe title="Map showing Arudra Residency in Tiruvannamalai" src="https://www.google.com/maps?q=Arudra%20Residency%2C%20Thirumanjana%20Gopuram%20Street%2C%20Tiruvannamalai&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Arudra Residency · No. 1, Thirumanjana Gopuram Street, Then Othavaadai Street, Tiruvannamalai, Tamil Nadu 606601</p>
+  </div>
+</div>
+
+<div class="contact-cards"><div class="contact-card"><small>Call Us</small><strong>+91 72008 23434</strong><strong>+04175 223434</strong><a class="btn btn-outline-dark" href="tel:+917200823434">Call Arudra Residency</a></div></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><div class="footer-brand">ARUDRA RESIDENCY</div><p>Comfortable accommodation in Tiruvannamalai, Tamil Nadu.</p></div><div class="footer-links"><a href="#about">About</a><a href="#rooms">Rooms</a><a href="#amenities">Facilities</a><a href="#gallery">Gallery</a><a href="#guest-stories">Guest Reviews</a><a href="#contact">Contact</a></div><p>© <span id="year"></span> Arudra Residency</p></div></footer>
+<a class="btn btn-gold mobile-book" href="https://wa.me/917200823434?text=Hello%20Arudra%20Residency%2C%20I%20would%20like%20to%20check%20room%20availability." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer"><button id="lightboxClose" aria-label="Close photo">×</button><img id="lightboxImage" src="" alt="Enlarged property photo"></div>
+<script>
+const menuToggle=document.getElementById('menuToggle');const navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰';});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+// Header darkens once user scrolls past hero
+const siteHeader=document.querySelector('.site-header');
+window.addEventListener('scroll',()=>{siteHeader.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+if(window.scrollY>60)siteHeader.classList.add('scrolled');
+document.getElementById('year').textContent=new Date().getFullYear();
+const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');document.querySelectorAll('.gallery-item').forEach(btn=>btn.addEventListener('click',()=>{lightboxImage.src=btn.dataset.full;lightbox.classList.add('open');}));function closeLightbox(){lightbox.classList.remove('open');lightboxImage.src='';}document.getElementById('lightboxClose').addEventListener('click',closeLightbox);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+
+// Hero slideshow: cycles only through existing Arudra Residency images.
+const heroSlides=[...document.querySelectorAll('.hero-slide')];
+let heroSlideIndex=0;
+const heroIndicators=document.querySelector('.hero-indicators');
+if(heroIndicators&&heroSlides.length){
+  heroSlides.forEach((_,i)=>{const b=document.createElement('button');b.className='hero-ind'+(i===0?' active':'');b.setAttribute('aria-label','Go to slide '+(i+1));b.addEventListener('click',()=>{heroSlides[heroSlideIndex].classList.remove('active');heroIndicators.children[heroSlideIndex].classList.remove('active');heroSlideIndex=i;heroSlides[i].classList.add('active');heroIndicators.children[i].classList.add('active');});heroIndicators.appendChild(b);});
+}
+const syncIndicator=i=>{if(!heroIndicators)return;[...heroIndicators.children].forEach((b,j)=>b.classList.toggle('active',j===i));};
+if(heroSlides.length>1){setInterval(()=>{heroSlides[heroSlideIndex].classList.remove('active');heroSlideIndex=(heroSlideIndex+1)%heroSlides.length;heroSlides[heroSlideIndex].classList.add('active');syncIndicator(heroSlideIndex);},5200);}
+
+// Subtle popping/reveal animation as sections enter the viewport.
+document.body.classList.add('reveal-ready');
+const revealTargets=document.querySelectorAll('section .eyebrow, section h2, section .about-copy p, .about-photo, .fact, .room-card, .facility, .gallery-item, .location-card, .location-photo, .guest-stories-inner, .inquiry-form, .map-panel, .contact-card');
+revealTargets.forEach((el,i)=>{el.classList.add('reveal');if(el.matches('.room-card,.facility,.gallery-item,.contact-card'))el.classList.add('pop-in');el.style.transitionDelay=((i%4)*75)+'ms';});
+if('IntersectionObserver' in window){
+ const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+ revealTargets.forEach(el=>revealObserver.observe(el));
+}else{revealTargets.forEach(el=>el.classList.add('is-visible'));}
+
+// Guest review carousel: touch navigation, pagination and optional auto-slide.
+const reviewCarousel=document.getElementById('reviewCarousel');
+if(reviewCarousel){
+ const reviewTrack=reviewCarousel.querySelector('.review-grid');
+ const reviewCards=[...reviewCarousel.querySelectorAll('.review-card')];
+ const reviewDots=reviewCarousel.querySelector('.review-dots');
+ const prevReview=reviewCarousel.querySelector('.review-arrow.prev');
+ const nextReview=reviewCarousel.querySelector('.review-arrow.next');
+ let reviewIndex=0,touchStartX=0,reviewTimer;
+ const visibleReviews=()=>window.innerWidth<=640?1:2;
+ const maxReviewIndex=()=>Math.max(0,reviewCards.length-visibleReviews());
+ const updateReviewDots=()=>{reviewDots.querySelectorAll('button').forEach((dot,index)=>{dot.classList.toggle('active',index===reviewIndex);dot.setAttribute('aria-selected',String(index===reviewIndex));});};
+ const showReview=index=>{reviewIndex=Math.max(0,Math.min(index,maxReviewIndex()));const cardWidth=reviewCards[0].getBoundingClientRect().width;reviewTrack.style.transform=`translateX(-${reviewIndex*(cardWidth+20)}px)`;prevReview.disabled=reviewIndex===0;nextReview.disabled=reviewIndex===maxReviewIndex();updateReviewDots();};
+ const buildReviewDots=()=>{reviewDots.replaceChildren();for(let index=0;index<=maxReviewIndex();index++){const dot=document.createElement('button');dot.type='button';dot.className=`review-dot${index===reviewIndex?' active':''}`;dot.setAttribute('role','tab');dot.setAttribute('aria-label',`Show review group ${index+1}`);dot.addEventListener('click',()=>{showReview(index);startReviewTimer();});reviewDots.appendChild(dot);}updateReviewDots();};
+ prevReview.addEventListener('click',()=>{showReview(reviewIndex<=0?maxReviewIndex():reviewIndex-1);startReviewTimer();});
+ nextReview.addEventListener('click',()=>{showReview(reviewIndex>=maxReviewIndex()?0:reviewIndex+1);startReviewTimer();});
+ reviewCarousel.addEventListener('touchstart',event=>{touchStartX=event.changedTouches[0].clientX;stopReviewTimer();},{passive:true});
+ reviewCarousel.addEventListener('touchend',event=>{const distance=event.changedTouches[0].clientX-touchStartX;if(Math.abs(distance)>45){showReview(reviewIndex+(distance<0?1:-1));}startReviewTimer();},{passive:true});
+ const stopReviewTimer=()=>clearInterval(reviewTimer);
+ const startReviewTimer=()=>{stopReviewTimer();reviewTimer=setInterval(()=>showReview(reviewIndex>=maxReviewIndex()?0:reviewIndex+1),5000);};
+ reviewCarousel.addEventListener('mouseenter',stopReviewTimer);
+ reviewCarousel.addEventListener('mouseleave',startReviewTimer);
+ window.addEventListener('resize',()=>{reviewIndex=Math.min(reviewIndex,maxReviewIndex());buildReviewDots();showReview(reviewIndex);});
+ buildReviewDots();showReview(0);startReviewTimer();
+
+document.querySelectorAll('.room-image').forEach(img=>{const slides=[...img.querySelectorAll('.room-slide')];const dots=[...img.querySelectorAll('.rdot')];let cur=0;const go=n=>{slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=(n+slides.length)%slides.length;slides[cur].classList.add('active');dots[cur].classList.add('active');};img.querySelector('.rslide-btn.prev').addEventListener('click',e=>{e.stopPropagation();go(cur-1);});img.querySelector('.rslide-btn.next').addEventListener('click',e=>{e.stopPropagation();go(cur+1);});dots.forEach((d,i)=>d.addEventListener('click',e=>{e.stopPropagation();go(i);}));});
+}
+
+// Hero booking bar — pre-fills enquiry form and scrolls to it
+const heroBookingForm = document.getElementById('heroBookingForm');
+if(heroBookingForm){
+  heroBookingForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const d = new FormData(heroBookingForm);
+    const ci = d.get('heroCheckIn'), co = d.get('heroCheckOut'), rm = d.get('heroRoom');
+    const f = document.getElementById('inquiryForm');
+    if(f){
+      if(ci) f.querySelector('[name=checkIn]').value = ci;
+      if(co) f.querySelector('[name=checkOut]').value = co;
+      if(rm){ const sel = f.querySelector('[name=roomType]'); if(sel)[...sel.options].forEach(o=>{if(o.value===rm)o.selected=true;}); }
+    }
+    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  });
+}
+// Replace the three placeholder strings below with your real EmailJS credentials
+// after completing the setup steps described in the README / chat instructions.
+const EMAILJS_PUBLIC_KEY  = 'zubDH5WFSFXeKwtTx';
+const EMAILJS_SERVICE_ID  = 'service_jdai7x6';
+const EMAILJS_TEMPLATE_ID = 'template_zy6ubg1';
+
+emailjs.init({publicKey: EMAILJS_PUBLIC_KEY});
+
+const inquiryForm = document.getElementById('inquiryForm');
+const formStatus  = document.getElementById('formStatus');
+
+if(inquiryForm){
+  inquiryForm.addEventListener('submit', async event => {
+    event.preventDefault();
+    const data = new FormData(inquiryForm);
+    const checkIn  = data.get('checkIn');
+    const checkOut = data.get('checkOut');
+    if(checkIn && checkOut && checkOut <= checkIn){
+      formStatus.style.color = '#b94a48';
+      formStatus.textContent = 'Check-out date must be later than check-in date.';
+      return;
+    }
+    const message=[
+'Hello Arudra Residency, I would like to enquire about a stay.',
+'Name: '+(data.get('guestName')||'Not provided'),
+'Phone: '+(data.get('guestPhone')||'Not provided'),
+'Preferred room: '+(data.get('roomType')||'Not specified'),
+'Check-in: '+(checkIn||'Not specified'),
+'Check-out: '+(checkOut||'Not specified'),
+'Message: '+(data.get('message')||'None')
+].join('\n');
+    window.open('https://wa.me/917200823434?text='+encodeURIComponent(message),'_blank','noopener');
+  });
+}
+
+</script>
+</body></html>
